@@ -26,8 +26,8 @@ class Restaurant {
         menu: {
           'Recomendadas': Food.generateRecommendFoods(),
           'Populares': Food.generatePopularFood()!,
-          'Massas': [],
-          'Sobremesas': [],
+          //'Massas': [],
+          //'Sobremesas': [],
         });
   }
 }

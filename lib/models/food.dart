@@ -47,9 +47,9 @@ class Food {
           {'Noodle': 'assets/images/ingre1.png'},
         ],
         about:
-            'Soba Noodle Soup, or Toshikoshi Soba, symbolizes good luck in the new year and is traditionally eaten by the Japanese on the 31st of December.',
+            'Dissolve gelatine in pot.\nAdd orange juice and sugar.\nTake pot off the stove.\nAdd 2 tablespoons of yoghurt.\nStir gelatin under remaining yoghurt.\nCool everything down in the refrigerator.\nWhip the cream and lift it under die orange mass.\nCool down again for at least 4 hours.\nServe with orange peel.',
         highLight: true,
-        isPopular: false,
+        isPopular: true,
         isRecommend: false,
         isFavorite: true),
     Food(
@@ -69,9 +69,9 @@ class Food {
           {'Noodle': 'assets/images/ingre1.png'},
         ],
         about:
-            ' A vibrant Thai sausage made with ground chicken, plus its spicy chile dip, from Chef Parnass Savang of Atlanta\'s Talat Market.',
+            'Form 2 patties.\nFry the patties for c. 4 minutes on each side.\nQuickly fry the buns for c. 1 minute on each side.\nBruch buns with ketchup.\nServe burger with tomato, cucumber and onion',
         highLight: false,
-        isPopular: false,
+        isPopular: true,
         isRecommend: true,
         isFavorite: false),
     Food(
@@ -91,7 +91,7 @@ class Food {
           {'Noodle': 'assets/images/ingre1.png'},
         ],
         about:
-            'A ratatouille is, by its very definition, a combination of vegetables fried and then simmered in a tomato sauce.',
+            'Tenderize the veal to about 2–4mm, and salt on both sides.\nOn a flat plate, stir the eggs briefly with a fork.\nLightly coat the cutlets in flour then dip into the egg, and finally, coat in breadcrumbs.\nHeat the butter and oil in a large pan (allow the fat to get very hot) and fry the schnitzels until golden brown on both sides.\nMake sure to toss the pan regularly so that the schnitzels are surrounded by oil and the crumbing becomes "fluffy".\nRemove, and drain on kitchen paper. Fry the parsley in the remaining oil and drain.\nPlace the schnitzels on awarmed plate and serve garnishedwith parsley and slices of lemon.',
         highLight: false,
         isPopular: false,
         isRecommend: true,
@@ -113,10 +113,10 @@ class Food {
           {'Noodle': 'assets/images/ingre1.png'},
         ],
         about:
-            'Tomato Chicken Curry (Tamatar Murgh) is an Indian chicken curry cooked with lots of fresh tomatoes and mild spices. It goes very well with Indian bread or steamed rice.',
+            'Cut the tomatoes and the onion into small pieces. Boil some water - add salt to it once it boils.\n Put the spaghetti into the boiling water - they should be done in about 10 to 12 minutes.\n In the meantime, heaten up some olive oil and add the cut onion.\n After 2 minutes, add the tomato pieces, salt, pepper and your other spices.\n The sauce will be done once the spaghetti are.\n Feel free to add some cheese on top of the finished dish.',
         highLight: false,
         isPopular: true,
-        isRecommend: false,
+        isRecommend: true,
         isFavorite: false),
   ];
 
