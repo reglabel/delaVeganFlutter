@@ -26,7 +26,11 @@ class CustomAppBar extends StatelessWidget {
             onTap: leftCallback != null ? () => leftCallback!() : null,
             child: _buildIcon(leftIcon),
           ),
-          _buildIcon(rightIcon),
+          GestureDetector(
+            onTap: rightCallback != null ? () => rightCallback!() : null,
+            child: _buildIcon(rightIcon),
+          ),
+          //_buildIcon(rightIcon),
         ],
       ),
     );

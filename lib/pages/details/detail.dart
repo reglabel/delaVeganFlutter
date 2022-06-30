@@ -6,6 +6,14 @@ import 'package:finalproject2/constants/colors.dart';
 import 'package:finalproject2/models/food.dart';
 import 'package:finalproject2/widgets/custom_app_bar.dart';
 
+IconData iconReturn(Food food){
+  if(food.isFavorite!){
+    return Icons.favorite;
+  } else{
+    return Icons.favorite_outline;
+  }
+}
+
 class DetailPage extends StatelessWidget {
   final Food food;
   const DetailPage({
@@ -22,8 +30,9 @@ class DetailPage extends StatelessWidget {
             children: [
               CustomAppBar(
                 leftIcon: Icons.arrow_back,
-                rightIcon: Icons.favorite_outline,
+                rightIcon: iconReturn(food),
                 leftCallback: () => Navigator.pop(context),
+                rightCallback: () => (food.isFavorite = !food.isFavorite!),
               ),
               FoodImg(
                 food: food,

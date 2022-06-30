@@ -132,10 +132,11 @@ class _FavoritePageState extends State<FavoritePage> {
                     ),
                   ],
                 )),
-        backgroundColor: Colors.blue,
+        backgroundColor: kPrimaryColor,
         child: const Icon(Icons.add_box_rounded),
       ),
       appBar: AppBar(
+        backgroundColor: kPrimaryColor,
         title: const Text('Suas favoritas'),
       ),
       body: ListView.builder(
@@ -143,7 +144,7 @@ class _FavoritePageState extends State<FavoritePage> {
         itemBuilder: (BuildContext contex, int index) {
           return Dismissible(
             background: Container(
-              color: Colors.green.shade900,
+              color: Colors.red,
             ),
             key: ValueKey<Food>(_favoritas[index]),
             onDismissed: (DismissDirection direction) {

@@ -11,6 +11,7 @@ import 'package:finalproject2/aplicacao/gerenciador_food.dart';
 
 import '../../models/food.dart';
 
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -22,6 +23,7 @@ class _HomePageState extends State<HomePage> {
   var selected = 0;
   final pageController = PageController();
   final restaurant = Restaurant.generateRestaurant();
+  bool _visible = true;
 
   @override
   Widget build(BuildContext context) {
@@ -84,8 +86,12 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const FavoritePage()));
+          Navigator.push(
+              context,
+              SlideRightRoute(
+                //builder: (context) => const FavoritePage(),
+                page:  const FavoritePage(),
+              ));
         },
         elevation: 2,
         backgroundColor: kPrimaryColor,
@@ -97,4 +103,30 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+}
+
+class SlideRightRoute extends PageRouteBuilder {
+  final Widget page;
+  SlideRightRoute({required this.page})
+      : super(
+          pageBuilder: (
+            BuildContext context,
+            Animation<double> animation,
+            Animation<double> secondaryAnimation,
+          ) =>
+              page,
+          transitionsBuilder: (
+            BuildContext context,
+            Animation<double> animation,
+            Animation<double> secondaryAnimation,
+            Widget child,
+          ) =>
+              SlideTransition(
+                position: Tween<Offset>(
+                  begin: const Offset(-1, 0),
+                  end: Offset.zero,
+                ).animate(animation),
+                child: child,
+              ),
+        );
 }
